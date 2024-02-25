@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Anushka Gaikwad Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+	
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Anushka Gaikwad</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="ftco-section">
+		<div class="home-slider owl-carousel">
+			<div class="row justify-content-center pb-5">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row d-md-flex no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+						<div class="one-forth align-items-center ftco-animate" data-scrollax=" properties: { translateY: '10%' }">
+							<div class="text text-center">
+	
+						<span class="subheading"><b>Hello!</b></span>
+						<h1 class="mb-4 mt-3">I'm <span style="color: rgb(255, 217, 0);"><b>Anushka Gaikwad</b></span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Engineer  ',
+						'Data Analyst  ',
+						'Power BI Developer   ',
+						'Data Visulization  ',
+						
+						
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>A Senior Analyst</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="https://www.linkedin.com/in/anushka--gaikwad/" target="_blank" class="btn btn-primary py-3 px-4">LinkedIn</a> 
+							
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/profile-pic (3).png" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Anushka Gaikwad</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Senior Analyst</span></p>
+										<p><span class="title-s">Experience: </span> <span>2 Years</span></p>
+										<p><span class="title-s">Address: </span> <span>Mumbai, India</span></p>
+									</div>
+								</div>
+							  </div>
+
+							  <div class="skill-mf">
+								<p class="title-s" style="color: white;"><b>Skills</b></p>
+								<div><span>								
+									<p class="title-s" ><b>Structure Query Language</b></p>
+								</span></div> <span class="pull-right">SQL Commands, Operators, Aggregator Functions, Joins, Subquery, Window Function</span>
+								<div class="progress">
+									<div  role="progressbar" style="width: 100%;" aria-valuenow="0" aria-valuemin="0"
+										aria-valuemax="0"></div>
+								</div>
+
+								
+								<div><span>								
+									<p class="title-s" ><b>Microsoft Excel</b></p>
+								</span></div> <span class="pull-right">Pivot Tables, Charts, Lookups, Power Query, Conditional Formatting and Power Pivot</span>
+								<div class="progress">
+									<div  role="progressbar" style="width: 100%;" aria-valuenow="0" aria-valuemin="0"
+										aria-valuemax="0"></div>
+								</div>
+
+								<div><span>								
+									<p class="title-s" ><b>Microsoft Power BI</b></p>
+								</span></div> <span class="pull-right">ETL, Data Modelling, DAX, Parameters, Row Level Security, Publishing, Scheduled Refresh, Reports & Dashboards</span>
+								<div class="progress">
+									<div  role="progressbar" style="width: 100%;" aria-valuenow="0" aria-valuemin="0"
+										aria-valuemax="0"></div>
+								</div>
+
+								<div><span>								
+									<p class="title-s" ><b>Statistical Analysis</b></p>
+								</span></div> <span class="pull-right">Descriptive, Probability, Confidence Interval, Regression, Hypothesis Testing
+								</span>
+								<div class="progress">
+									<div  role="progressbar" style="width: 100%;" aria-valuenow="0" aria-valuemin="0"
+										aria-valuemax="0"></div>
+								</div>
+								
+								
+								
+							</div>
+						</div>
+					</div>
+				</div>
+									
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>With over 2 years of experience in the field of data, accompanied by a bachelor's degree in engineering. 
+									Proficient in Structure query language, Micrsoft excel, Micrsoft Power BI &amp; statistical analysis. 
+									</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Data Analytics</span></li>
+									<li class="d-flex"><span>Domain:</span> <span>Automotive, Retail &amp; Ecommerce</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Bachelor of Engineering</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Hindi, Marathi</span></li>
+								
+									<li class="d-flex"><span>Other Skills:</span> <span>IBM MDM, Informatica, Cloud &amp; Google Analytics</span></li>
+									<li class="d-flex"><span>Functional Areas:</span> <span>Data Analysis, Power BI Developer, Data Visualization, Busineese Analysis, Database Management </span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="20">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="https://www.novypro.com/profile_projects/anushkagaikwad" target="_blank" class="btn btn-primary py-3 px-3">NovyPro</a>
+								<a href="https://github.com/anushkagaikwad-ag" target="_blank" class="btn btn-white btn-outline-white py-3 px-4">Github</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>With 2 years of consistent data achievements in the automotive sector, holds a Microsoft Certification as a Power BI Data Analyst, leveraging expertise in SQL, Excel, to optimize data management.</p>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2023-Present</span>
+						<h2>Senior Analyst</h2>
+						<span class="position">Capgemini</span>
+						<p class="mt-4">IBM Master Data Management 
+							<ul>
+								<li>Improved operational efficiency by optimizing batch processing speed by 45%, leveraging Amazon S3 for efficient storage and retrieval of critical data.</li>
+								<li>Drove system excellence through code testing and debugging, resulting in a 20% reduction in software errors & 15% improvement in overall performance.</li>
+							
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2022-2023</span>
+						<h2> Analyst</h2>
+						<span class="position">Capgemini</span>
+						<p class="mt-4">IBM Master Data Management 
+							<ul>
+								<li>Enhanced database querying efficiency hrough optimized techniques, reducing response time by 20% & efficient data retrieval.</li>
+								<li>Implemented match and merge strategies to validate data, using specific criteria for duplicated records and achieving a 65% reduction in redundancy.</li>
+								
+							</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2017-2020</span>
+    					<h2>Bachelor of Engineering</h2>
+    					<span class="position">Savitribai Phule Pune University</span>
+    					<p class="mt-4">Grade: First class distinction.</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2014-2017</span>
+    					<h2>Diploma of Engineering</h2>
+    					<span class="position">Savitribai Phule Pune University</span>
+    					<p class="mt-4">Grade: First class distinction.</p>
+    				</div>
+				</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="#" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+	
+
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>Below are the projects on SQL, Excel & Power BI.</p>
+          </div>
+        </div>
+
+		<span class="position" style="color: rgb(255, 217, 0);"><b>Structure Query Language</b></span>
+
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/anushkagaikwad-ag/Sports_Retail_Revenue_SQL/tree/main"target="_blank" class="block-20  zoom-effect" style="background-image: url('images/SQL\ 1.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/anushkagaikwad-ag/Sports_Retail_Revenue_SQL/tree/main" target="_blank">Sports Retail Revenue Analysis </a></h3>
+                <p>Analyzed product data for an online sports retail company to recommendate on how the company can maximize revenue!</p>
+              </div>
+            </div>
+          </div>
+	
+  <div class="col-md-4 d-flex ftco-animate">
+	  <div class="blog-entry justify-content-end">
+	  <a href="https://github.com/anushkagaikwad-ag/SQL-Project---Real-Estate-Management-System" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/SQL\ 2.png');">
+	  </a>
+	  <div class="text mt-3 float-right d-block">
+
+		<h3 class="heading"><a href="https://github.com/anushkagaikwad-ag/SQL-Project---Real-Estate-Management-System" target="_blank">Real Estate Management System</a></h3>
+		<p>Developed real estate management system that facilitates the tracking and management of various properties.</p>
+	  </div>
+	</div>
+  </div>
+          
+		</div>
+		  <div><div><span class="position" style="color: rgb(255, 217, 0);"><b>Microsoft Excel</b></span></div></div>
+		  <div class="row d-flex">
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/anushkagaikwad-ag/Adidas_Sales_Anlaysis_Excel_Dasboard" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/Sales\ Analysis.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/anushkagaikwad-ag/Adidas_Sales_Anlaysis_Excel_Dasboard" target="_blank">Sales Analysis</a></h3>
+				  <p>Analyzed sales data using advanced excel to identify gaps and increase the business growth.</p>
+				</div>
+			  </div>
+			</div>
+	  
+	<div class="col-md-4 d-flex ftco-animate">
+		<div class="blog-entry justify-content-end">
+		<a href="https://github.com/anushkagaikwad-ag/Hotel-Reservation-Analysis" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/Hotel\ Dashobard.jpg');">
+		</a>
+		<div class="text mt-3 float-right d-block">
+  
+		  <h3 class="heading"><a href="https://github.com/anushkagaikwad-ag/Hotel-Reservation-Analysis" target="_blank">Hotel Resrvation Analysis</a></h3>
+		  <p>Performed analysis on hotel reservations to understand yearly profits and losses, strategies to overcome financial setbacks.</p>
+		</div>
+	  </div>
+	</div>
+	
+  </div>
+  
+		  <div><div><span class="position" style="color: rgb(255, 217, 0);"><b>Microsoft Power BI</b></span></div></div>
+		  <div class="row d-flex">
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://www.novypro.com/project/it-help-desk-1" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/IT-Help_Desk.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://www.novypro.com/project/it-help-desk-1" target="_blank">IT Help Desk</a></h3>
+				  <p>Developed IT Help desk report to provide actionable insights, improve resource allocation and customer expectations.</p>
+				</div>
+			  </div>
+			</div>
+	  
+	<div class="col-md-4 d-flex ftco-animate">
+		<div class="blog-entry justify-content-end">
+		<a href="https://www.novypro.com/project/hr-analytics-dashboard-295" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/HR_Dashboard.jpg');">
+		</a>
+		<div class="text mt-3 float-right d-block">
+  
+		  <h3 class="heading"><a href="https://www.novypro.com/project/hr-analytics-dashboard-295" target="_blank">HR Analytics Dashboard</a></h3>
+		  <p>Performed data analysis on HR data to understand employees performance, salary and attrition.</p>
+		</div>
+	  </div>
+	</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://www.novypro.com/project/car-sales-dashboard-27" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/Car\ Sales.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+				  <h3 class="heading"><a href="https://www.novypro.com/project/car-sales-dashboard-27" target="_blank"> Car Sales Analysis</a></h3>
+				  <p>Developed a dynamic and interactive Car Sales Dashboard, to understand sales performance.
+
+				  </p>
+				</div>
+			  </div>
+			</div>
+		  </div>
+          
+
+		<!-- added justify-content-center to center align the last two projects 
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main">Sales Forecast- Time Series Forecasting</a></h3>
+				  <p>Used multiple machine learning models to forecast sales (retail store) and performed time series analysis.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb">Customer Segmentation using clustering model</a></h3>
+				  <p>Developed a ML model to give various recommendations of financial products &amp; services on target customer groups.</p>
+				</div>
+			  </div>
+			</div>
+		 </div>
+	  </div>
+    </section>-->
+
+	
+	
+	  
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Mumbai, India</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://0101010101">+91 9284415313</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:info@yoursite.com">anushkagaikwad411@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="#">resumelink</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/anushka--gaikwad/"><span class="icon-linkedin"></span></a></li>  
+					  
+					  <li class="ftco-animate"><a href="https://github.com/anushkagaikwad-ag"><span class="icon-github"></span></a></li>
+					  
+				      
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
